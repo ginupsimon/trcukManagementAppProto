@@ -1,0 +1,23 @@
+<ion-view view-title="Logistics Optimizer" >
+  <ion-nav-bar class="bar-positive">
+
+  </ion-nav-bar>
+  <ion-content>
+    <div class="item item-text-wrap" ng-repeat="door in doorDetails">
+      <div class="row">
+        <ion-item>
+          {{door.doorNo}}
+
+        </ion-item>
+        <div class="col text-center">
+          Trailer No : {{door.trailerNo}} <br> Delivery No : {{door.deliveryNo}} <br> Arrival : {{door.arrivalTime}}
+        </div>
+        <div class="col text-right">
+          <button class="button button-positive">
+            Assign
+          </button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
